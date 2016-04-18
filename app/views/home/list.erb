@@ -1,0 +1,10 @@
+<h1 style = "text-align:center">You did like this</h1>
+<% @every_post.each do |p| %>
+제목 : <%= p.DBtitle %> <br>
+내용 : <%= p.DBcontent %> <br>
+시간 : <%= p.created_at %><br>
+<a href = "/update_view/<%= p.id %>">[Revise]</a>
+<a href = "/destroy/<%= p.id %>">[Delete]</a>
+<hr>
+<% end %>
+<h1 style = "text-align:center"><a href = "/">Go back</a></h1>
