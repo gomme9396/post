@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get 'home/index'
-  get 'list' => 'home#list'
-  get 'destroy/:post_id' => 'home#destroy'
+  get 'home/index' #시작을 인덱스로 고정
+  get 'list' => 'home#list' #list 명령이 들어오면 리스트 erb로 전달
+  get 'destroy/:post_id' => 'home#destroy' 
   get 'update_view/:post_id' => 'home#update_view'
   
   post '/write' => 'home#write'

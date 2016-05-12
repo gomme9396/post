@@ -1,7 +1,7 @@
-
+<!--수정부분 구현시켜놨는데 차이점은 초기값에 값을 DB에서 따오는거 잘 확인 할것-->
 <div class = "container">
     <h1 style = "text-align : center">Revise your post</h1>
-    <form action="/revise/<%= @one_post.id %>" method = "POST"> 
+    <form action="/revise/<%= @one_post.id %>" method = "POST"> <!--여기서도 id를 기반으로하여 수정 Action을 취함-->
       <div class="form-group">
         <label for="exampleInputEmail1">제목을 입력하세요</label>
         <input type="text" name = "title" value = "<%= @one_post.DBtitle %>" class="form-control" id="exampleInputEmail1" placeholder="제목을 입력하세요">

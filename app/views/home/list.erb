@@ -1,3 +1,5 @@
+<!--Post DB값을 가지고 있는 @every_post 변수의 값을 사용자에게 보여줌-->
+<!--수정과 삭제기능도 구현시켜 놨음, 해당 부분 잘 볼 것-->
 <h1 style = "text-align:center">You did like this</h1>
 <% @every_post.each do |p| %>
 제목 : <%= p.DBtitle %> <br>
